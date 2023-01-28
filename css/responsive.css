@@ -251,8 +251,8 @@ p{
 	left:36%;
 }
 .mobile-menu {
-	width:28%;
-	height: 32px;
+	width:32%;
+	height: 42px;
 }
 #wedding {
 	font-size:13px;
@@ -263,6 +263,11 @@ p{
 #wedding h3 {
 	font-size:18px;
 }
+
+h3 {
+	margin-bottom: 16px;
+}
+
 #wedding h1 {
 	font-size:20px;
 }

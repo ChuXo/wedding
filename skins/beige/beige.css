@@ -79,7 +79,7 @@ nav.main-menu-container {
 }
 .mobile-menu { background-color:#fff0c5e8; border-color:#fff0c5e8; color:#5a5a5a; }
 .rsvp p span select, .mobile-menu {
-	/*background-image:url(images/menu-square.png);*/
+	/*background-image:url(images/arrow.png);*/
 	/*background: #fff0c5e8;*/
 }
 .rsvp p span input:hover, .rsvp p span textarea:hover, .rsvp p span select:hover, textarea:focus, .rsvp p span input:focus, .rsvp p span textarea:focus, .rsvp p span select:focus {
