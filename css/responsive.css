@@ -105,7 +105,7 @@ ul.category-filter li a, .category-filter li a span {
 }
 /* = Smaller than iPad Portrait 
 ----------------------------------------------------- */
-@media only screen and (max-width:767px){
+@media only screen and (max-width: 982){	/*767px*/
 .container {
 	width:420px;
 }
@@ -127,9 +127,9 @@ ul.category-filter li a, .category-filter li a span {
 #home {
 	padding-top:135px;
 }
-#ourstory, #direction, #registry, #rsvp, #photo, #groomsmen, #bridesmaid {
-	/*padding-top:161px;*/
-}
+/*#ourstory, #direction, #registry, #rsvp, #photo, #groomsmen, #bridesmaid {
+	padding-top:161px;
+}*/
 .mobile-menu {
 	display:inline;
 	/*margin-top:99px;*/
