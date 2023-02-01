@@ -598,7 +598,9 @@ input[type="reset"] {
 }
 
 .invite {
-	font-family: 'Great Vibes', cursive;
+	/*font-family: 'Great Vibes', cursive;*/
+	font-family: FontAwesome;
+	
 	line-height: normal;
 	background-color: white;
 	padding: 20px;
@@ -622,14 +624,15 @@ input[type="reset"] {
 ul.category-filter li a,
 .portfolio-container article h4 a,
 h3 {
-	font-family: 'Courgette', cursive;
+	/*font-family: 'Courgette', cursive;*/
+	font-family: 'Oswald', sans-serif;
 }
 
 /* =Main menu styles
 -------------------------------------------------------------- */
 #header {
 	display: block;
-	height: 92px;
+	height: 52px;
 	left: 0;
 	margin: 0;
 	padding: 0;
@@ -665,7 +668,8 @@ h3 {
 	color: #fff0c5e8;
 	cursor: pointer;
 	display: none;
-	font-family: 'Courgette', cursive;
+	/*font-family: 'Courgette', cursive;*/
+	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	height: 40px;
@@ -685,13 +689,15 @@ h3 {
 
 nav.main-menu-container {
 	height: 53px;
-	margin-top: 39px;
+	margin-top: 8px;
+	margin: 0 auto;
 }
 
 .main-menu-container ul {
 	font-size: 16px;
 	margin-bottom: 0;
 	text-transform: capitalize;
+	text-align: center;
 }
 
 .main-menu-container ul li {
@@ -764,7 +770,7 @@ nav.main-menu-container {
 }
 
 .hr-white {
-	background-image: url(images/hr-dark.png);
+	/*background-image: url(images/hr-dark.png);*/
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	height: 29px;
@@ -798,13 +804,13 @@ nav.main-menu-container {
 	margin-top: 40px;
 }
 
-.portfolio .one-half figure {
+.portfolio figure {	/*.one-half */
 	display: block;
-	height: 370px;
+	height: 670px;
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
-	width: 370px;
+	width: 670px;
 }
 
 .portfolio .one-half figure img {
@@ -817,8 +823,8 @@ nav.main-menu-container {
 
 .portfolio .one-half figure img:hover {
 	border-radius: 50%;
-	height: 450px;
-	width: 450px;
+	height: 7700px;
+	width: 770px;
 	margin-left: -20px;
 	margin-top: -5px;
 }
@@ -826,13 +832,13 @@ nav.main-menu-container {
 .portfolio a img {
 	display: block;
 	margin: 0;
-	height: 370px;
+	height: 670px;
 	-webkit-transition: all 1.5s ease;
 	-moz-transition: all 1.5s ease;
 	-o-transition: all 1.5s ease;
 	-ms-transition: all 1.5s ease;
 	transition: all 1.5s ease;
-	width: 370px;
+	width: 670px;
 }
 
 .page-bottom-bg {
@@ -1384,6 +1390,7 @@ footer {
 
 .social-media {
 	display: inline-block;
+	margin-top: 32px;
 	margin-bottom: 45px;
 	text-align: center;
 }

@@ -1,7 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
-body, #header, #rsvp .site-content, #registry, #direction .site-content, #photo, #groomsmen .site-content, #bridesmaid {
-	background-color:#fff0c5e8;
+body, #rsvp .site-content, #registry, #direction .site-content, #photo, #groomsmen .site-content, #bridesmaid {
+	background-color:#ffffc5;
+}
+#header {
+	background-color:#f4b183e8;
 }
 #ourstory .site-content, #rsvp, #registry .site-content, #direction, #photo .site-content, #groomsmen, #bridesmaid .site-content, footer {
 	background-color:#fff9e6;
@@ -10,16 +13,16 @@ body, #header, #rsvp .site-content, #registry, #direction .site-content, #photo,
 	/*background:url(images/logo.png) center;*/
 }
 .theme-border-big {
-	border:7px solid #cc6602;
+	border:7px solid #f4aa78;
 }
 .theme-border-big:hover{
-	border:7px solid #bc5d00;
+	border:7px solid #d49469;
 }
 .theme-border {
-	border:5px solid #cc6602;
+	border:5px solid #f4aa78;
 }
 .theme-border:hover{
-	border:5px solid #bc5d00;
+	border:5px solid #d49469;
 }
 .page-title {
     background-color: #16130f;
@@ -53,7 +56,7 @@ nav.main-menu-container {
 	/*background:url(images/menu-bg.jpg) repeat-x;*/
 }
 .main-menu-container ul li.current_page_item a, .main-menu-container ul li a:hover, .social-media a, .clients a, #groomsmen article h4 span, #bridesmaid article h4 span, .portfolio-container article h4 a:hover, #groomsmen figure span, #address ul li a:hover, a {
-	color:#cb6502;
+	color:#ffd966;
 }
 /* =Client styles
 -------------------------------------------------------------- */
@@ -77,31 +80,33 @@ nav.main-menu-container {
 .rsvp p span input, .rsvp p span textarea, .rsvp p span select {
 	background-color: #ffd2a5;
 }
-.mobile-menu { background-color:#fff0c5e8; border-color:#fff0c5e8; color:#5a5a5a; }
+.mobile-menu { background-color:#f4b18300; border-color:#f4b18300; color:#5a5a5a; }
 .rsvp p span select, .mobile-menu {
 	/*background-image:url(images/arrow.png);*/
-	/*background: #fff0c5e8;*/
+	/*background: #f4b18300;*/
 }
 .rsvp p span input:hover, .rsvp p span textarea:hover, .rsvp p span select:hover, textarea:focus, .rsvp p span input:focus, .rsvp p span textarea:focus, .rsvp p span select:focus {
 	background-color: #f7c899;
 }
 .rsvp p.submit-bg span {
-	background:url(images/btn-bg-border.jpg) repeat;
+	/*background:url(images/btn-bg-border.jpg) repeat;*/
+	background-color: #d49469;
 }
 .rsvp p.submit-bg span input {
-	background-color:#c37a32;
+	background-color:#f4aa78;
 	color:#fde5cc;
 }
 .rsvp p.submit-bg span input:hover {
-	background-color:#bb722b;
+	background-color:#d49469;
 }
 /* =ourstory styles
 -------------------------------------------------------------- */
 .portfolio-container article figure, #direction iframe, #groomsmen figure .thumb, #bridesmaid figure .thumb, .ls-fullwidth {
-	background:url(images/bg-border-dark.jpg) repeat;
+	/*background:url(images/bg-border-dark.jpg) repeat;*/
+	background-color: #f4aa78;
 }
 #ourstory .post-detail {
-	background-color:#cc6602;
+	background-color:#f4aa78;
 }
 #ourstory .post-detail h3, #ourstory .post-detail p {
 	color:#ffeedd;
@@ -113,10 +118,10 @@ nav.main-menu-container {
 	background:url(images/ls_arrow.png) no-repeat;
 }
 .ls-fullwidth .ls-thumbnail-hover-bg {
-	background:#cc6602;
+	background:#f4aa78;
 }
 .ls-fullwidth .ls-thumbnail-hover span {
-	border: 5px solid #cc6602;
+	border: 5px solid #f4aa78;
 }
 
 .timeline:before { background-color: #2C3840; }
@@ -159,7 +164,7 @@ nav.main-menu-container {
 	background-image: url(images/filter-active.png);
 }
 .category-filter li a.active, .category-filter li a:hover {
-	color:#cc6602;
+	color:#f4aa78;
 }
 .social .icon-facebook, .social .icon-twitter {
 	background-color:#ffeee6;

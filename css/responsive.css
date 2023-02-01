@@ -34,6 +34,7 @@ p {
 	height:270px;
 	width:270px;
 }
+
 .portfolio .one-half figure img:hover {
 	margin-left:-45px;
 	margin-top:-20px;
@@ -122,7 +123,7 @@ ul.category-filter li a, .category-filter li a span {
 	display:none;
 }
 #header {
-	height:108px;
+	height:48px;
 }
 #home {
 	padding-top:135px;
@@ -149,7 +150,11 @@ nav.main-menu-container {
 #wedding h1 {
 	font-size:40px;
 }
-.portfolio .one-half figure, .portfolio .one-half figure a img {
+.portfolio figure {
+	height:270px;
+	width:270px;
+}
+.portfolio a img {
 	height:270px;
 	width:270px;
 }
