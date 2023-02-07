@@ -1,10 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 body, #rsvp .site-content, #registry, #direction .site-content, #photo, #groomsmen .site-content, #bridesmaid {
-	background-color:#ffffc5;
+	background-color:#fff9e6;
 }
 #header {
-	background-color:#f4b183e8;
+	background-color:#F2921De8;
 }
 #ourstory .site-content, #rsvp, #registry .site-content, #direction, #photo .site-content, #groomsmen, #bridesmaid .site-content, footer {
 	background-color:#fff9e6;
@@ -90,23 +90,23 @@ nav.main-menu-container {
 }
 .rsvp p.submit-bg span {
 	/*background:url(images/btn-bg-border.jpg) repeat;*/
-	background-color: #d49469;
+	background-color: #F2921D;
 }
 .rsvp p.submit-bg span input {
-	background-color:#f4aa78;
+	background-color:#F2921D;
 	color:#fde5cc;
 }
 .rsvp p.submit-bg span input:hover {
-	background-color:#d49469;
+	background-color:#F2921D;
 }
 /* =ourstory styles
 -------------------------------------------------------------- */
 .portfolio-container article figure, #direction iframe, #groomsmen figure .thumb, #bridesmaid figure .thumb, .ls-fullwidth {
 	/*background:url(images/bg-border-dark.jpg) repeat;*/
-	background-color: #f4aa78;
+	background-color: #F2921D;
 }
 #ourstory .post-detail {
-	background-color:#f4aa78;
+	background-color:#F2921D;
 }
 #ourstory .post-detail h3, #ourstory .post-detail p {
 	color:#ffeedd;
@@ -118,10 +118,10 @@ nav.main-menu-container {
 	background:url(images/ls_arrow.png) no-repeat;
 }
 .ls-fullwidth .ls-thumbnail-hover-bg {
-	background:#f4aa78;
+	background:#F2921D;
 }
 .ls-fullwidth .ls-thumbnail-hover span {
-	border: 5px solid #f4aa78;
+	border: 5px solid #F2921D;
 }
 
 .timeline:before { background-color: #2C3840; }
@@ -150,10 +150,10 @@ nav.main-menu-container {
 /* =groomsmen styles
 -------------------------------------------------------------- */
 #groomsmen figure, #bridesmaid figure{
-	background-image: url(images/grooms-bg.png);
+	/*background-image: url(images/grooms-bg.png);*/
 }
 #groomsmen figure .thumb:hover, #bridesmaid figure .thumb:hover{
-	background:#de8f4d;
+	background:#F2921D;
 }
 #bridesmaid figure .thumb .social, #groomsmen figure .thumb .social {
 	background:url(images/social-bg.png) bottom no-repeat;
@@ -164,11 +164,11 @@ nav.main-menu-container {
 	background-image: url(images/filter-active.png);
 }
 .category-filter li a.active, .category-filter li a:hover {
-	color:#f4aa78;
+	color:#F2921D;
 }
 .social .icon-facebook, .social .icon-twitter {
 	background-color:#ffeee6;
-	color:#c87026;
+	color:#F2921D;
 }
 /* =photo styles
 -------------------------------------------------------------- */
