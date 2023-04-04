@@ -4,7 +4,7 @@ body, #rsvp .site-content, #registry, #direction .site-content, #photo, #groomsm
 	background-color:#fff9e6;
 }
 #header {
-	background-color:#F2921De8;
+	background-color:#f4aa78e8;
 }
 #ourstory .site-content, #rsvp, #registry .site-content, #direction, #photo .site-content, #groomsmen, #bridesmaid .site-content, footer {
 	background-color:#fff9e6;
@@ -17,6 +17,10 @@ body, #rsvp .site-content, #registry, #direction .site-content, #photo, #groomsm
 }
 .theme-border-big:hover{
 	border:7px solid #d49469;
+}
+.border-contact {
+	border:7px solid #f4aa78;
+	border-radius: 50%;
 }
 .theme-border {
 	border:5px solid #f4aa78;
@@ -72,7 +76,7 @@ nav.main-menu-container {
 /* =rsvp styles
 -------------------------------------------------------------- */
 .rsvp .custom-radio label {
-	background:url(images/radio-btn.png) left bottom no-repeat;
+	background:url(images/radio-btn2.png) left bottom no-repeat;
 }
 .rsvp p span {
 	background:url(images/bg-border.jpg) repeat;
@@ -90,23 +94,23 @@ nav.main-menu-container {
 }
 .rsvp p.submit-bg span {
 	/*background:url(images/btn-bg-border.jpg) repeat;*/
-	background-color: #F2921D;
+	background-color: #f4aa78;
 }
 .rsvp p.submit-bg span input {
-	background-color:#F2921D;
+	background-color:#f4aa78;
 	color:#fde5cc;
 }
 .rsvp p.submit-bg span input:hover {
-	background-color:#F2921D;
+	background-color:#f4aa78;
 }
 /* =ourstory styles
 -------------------------------------------------------------- */
 .portfolio-container article figure, #direction iframe, #groomsmen figure .thumb, #bridesmaid figure .thumb, .ls-fullwidth {
 	/*background:url(images/bg-border-dark.jpg) repeat;*/
-	background-color: #F2921D;
+	background-color: #f4aa78;
 }
 #ourstory .post-detail {
-	background-color:#F2921D;
+	background-color:#f4aa78;
 }
 #ourstory .post-detail h3, #ourstory .post-detail p {
 	color:#ffeedd;
@@ -118,10 +122,10 @@ nav.main-menu-container {
 	background:url(images/ls_arrow.png) no-repeat;
 }
 .ls-fullwidth .ls-thumbnail-hover-bg {
-	background:#F2921D;
+	background:#f4aa78;
 }
 .ls-fullwidth .ls-thumbnail-hover span {
-	border: 5px solid #F2921D;
+	border: 5px solid #f4aa78;
 }
 
 .timeline:before { background-color: #2C3840; }
@@ -153,7 +157,7 @@ nav.main-menu-container {
 	/*background-image: url(images/grooms-bg.png);*/
 }
 #groomsmen figure .thumb:hover, #bridesmaid figure .thumb:hover{
-	background:#F2921D;
+	background:#f4aa78;
 }
 #bridesmaid figure .thumb .social, #groomsmen figure .thumb .social {
 	background:url(images/social-bg.png) bottom no-repeat;
@@ -164,11 +168,11 @@ nav.main-menu-container {
 	background-image: url(images/filter-active.png);
 }
 .category-filter li a.active, .category-filter li a:hover {
-	color:#F2921D;
+	color:#f4aa78;
 }
 .social .icon-facebook, .social .icon-twitter {
 	background-color:#ffeee6;
-	color:#F2921D;
+	color:#f4aa78;
 }
 /* =photo styles
 -------------------------------------------------------------- */

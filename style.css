@@ -573,10 +573,23 @@ ul.category-filter li a {
 	behavior: url(PIE.htc);
 }
 
+.countdown {
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+	background: #f4aa78;
+	padding: 16px;
+	text-align: center;
+	display:inline-block;
+}
+
 /* =Font styles
 -------------------------------------------------------------- */
 nav.main-menu-container {
 	font-family: 'Bitter', serif;
+}
+
+.email-input-font {
+	font-family: 'Bitter', serif;;
 }
 
 .oswald,
@@ -598,6 +611,11 @@ input[type="reset"] {
 	font-weight: normal;
 }
 
+.countdown-container {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
 .invite {
 	/*font-family: 'Great Vibes', cursive;*/
 	font-family: FontAwesome;
@@ -609,6 +627,17 @@ input[type="reset"] {
 	display: inline-block;
 	font-size: 45px;
 	margin-top: 10px;
+}
+
+.invite-text {
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.invite-subtitle {
+	margin-top: 20px;
+	font-size: 24px;
 }
 
 .invite-container {
@@ -872,7 +901,7 @@ nav.main-menu-container {
 
 .page-title h2 {
 	/*color: white;*/
-	color: #fff0c5;
+	color: #f4aa78;
 	font-weight: normal;
 	font-size: 70px;
 	padding-top: 106px;
@@ -888,6 +917,7 @@ nav.main-menu-container {
 
 .SectionHead {
 	font-size: 16px;
+	font-family: 'Oswald', sans-serif;
 }
 
 /* =rsvp styles
@@ -1233,7 +1263,7 @@ ul.category-filter li a.active {
 
 #groomsmen .entry-thumb,
 #bridesmaid .entry-thumb {
-	width: 40.5%;
+	width: 50.5%;
 }
 
 #groomsmen .entry-detail,
@@ -1692,6 +1722,11 @@ footer {
 	position: relative;
 	transition: all 400ms linear 0s;
 }
+
+.theme-border-contact {
+	border-radius: 50%;
+}
+
 
 .right .post-thumb:before {
 	border-style: solid;

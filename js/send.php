@@ -1,7 +1,7 @@
 <?php
 if(!$_POST) exit;
 
-    $to 	  = 'gopal@iamdesigning.com';
+    $to 	  = 'christina_brand@outlook.de';
 	$fname	  = $_POST['fname'];
 	$lname	  = $_POST['lname'];	
 	$email    = $_POST['email'];

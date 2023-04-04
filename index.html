@@ -3,64 +3,99 @@
 <!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en-gb" class="no-js"> 
+<html lang="en-gb" class="no-js">
 <!--<![endif]-->
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<title> Hochzeit - Home </title>
-	
-	<meta name="description" content="">
-	<meta name="author" content="timoschuck">
-    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title> Hochzeit - Home </title>
+
+    <meta name="description" content="">
+    <meta name="author" content="timoschuck">
+
     <!-- ======================= CSS - stylesheets ======================= -->
     <link href="skins/pastell/pastell.css" rel="stylesheet" media="all" />
     <link href="style.css" rel="stylesheet" media="all">
     <link href="css/shortcodes.css" rel="stylesheet" media="all">
     <link href="css/responsive.css" rel="stylesheet" media="all">
     <!--link href="skins/yellow/yellow.css" rel="stylesheet" media="all" id="color_skin_css"-->
-    
-    <link href="js/isotope/isotope-style.css" rel="stylesheet" type="text/css">
-    <link href="js/prettyphoto/prettyPhoto.css" rel="stylesheet" type="text/css">    
-    <link rel="stylesheet" href="js/layerslider/layerslider.css" type="text/css">
-    
-    <!-- ======================= Color Picker ======================= -->
-	<!-- <link type="text/css" href="js/controlpanel/control-panel.css" rel="stylesheet"> -->
 
-    
+    <link href="js/isotope/isotope-style.css" rel="stylesheet" type="text/css">
+    <link href="js/prettyphoto/prettyPhoto.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="js/layerslider/layerslider.css" type="text/css">
+
+    <!-- ======================= Color Picker ======================= -->
+    <!-- <link type="text/css" href="js/controlpanel/control-panel.css" rel="stylesheet"> -->
+
+
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <link rel="stylesheet" type="text/css" href="css/ie8-and-down.css">
     <![endif]-->
-    
-	<!-- ======================= Favicon ======================= -->
-	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-    
-        
-	<!-- ======================= Font Awesome ======================= -->
+
+    <!-- ======================= Favicon ======================= -->
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+
+    <!-- ======================= Font Awesome ======================= -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    
+
     <!--[if IE 7]>
     <link rel="stylesheet" type="text/css" href="css/ie7.css">
     <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
     <![endif]-->
-    
+
     <!-- ======================= Google Fonts ======================= -->
     <link href='https://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+
+    <script>
+        var end = new Date('10/14/2023 1:3 PM');
+
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById('countdown').innerHTML = days + 'days ';
+            document.getElementById('countdown').innerHTML += hours + 'hrs ';
+            document.getElementById('countdown').innerHTML += minutes + 'mins ';
+            document.getElementById('countdown').innerHTML += seconds + 'secs';
+        }
+
+        timer = setInterval(showRemaining, 1000);
+    </script>
+
 </head>
 
 <body>
-	<!-- ======================= wrapper starts ======================= -->
+    <!-- ======================= wrapper starts ======================= -->
     <div class="wrapper">
-    	<!-- ======================= header starts ======================= -->
+        <!-- ======================= header starts ======================= -->
         <header id="header">
-        	<div class="container">
-            	<div id="Logo">
+            <div class="container">
+                <div id="Logo">
                     <h2><a href="index.html">Hochzeit</a></h2>
                 </div>
             </div>
@@ -68,29 +103,29 @@
             <nav class="main-menu-container" id="menu">
                 <div class="container">
                     <!--div class="float-left main-menu" id="LeftNav"-->
-                        <ul > <!-- class="float-right menu" -->
-                            <li class="menu-item current_page_item"><a href="#home">Home</a></li>
-                            <li class="menu-item"><a href="#ourstory">Hochzeitsfeier</a></li>
-                            <li class="menu-item"><a href="#rsvp">Rückmeldung</a></li>
-                            <li class="menu-item"><a href="#registry">FAQ</a></li>
+                    <ul> <!-- class="float-right menu" -->
+                        <li class="menu-item current_page_item"><a href="#home">Home</a></li>
+                        <li class="menu-item"><a href="#ourstory">Hochzeitsfeier</a></li>
+                        <li class="menu-item"><a href="#rsvp">Rückmeldung</a></li>
+                        <li class="menu-item"><a href="#registry">FAQ</a></li>
                         <!--//ul>
                     <div>
                     <div class="float-right main-menu" id="RightNav">
                         <ul class="float-left menu"-->
-                            <li class="menu-item"><a href="#direction">Anfahrt</a></li>
-                            <li class="menu-item"><a href="#photo">Fotos</a></li>
-                            <li class="menu-item"><a href="#groomsmen">Kontakt</a></li>
-                            <!--li class="menu-item"><a href="#bridesmaid">Trautzeugin</a></li-->
-                      </ul>
-                  </div>
+                        <li class="menu-item"><a href="#direction">Anfahrt</a></li>
+                        <li class="menu-item"><a href="#photo">Fotos</a></li>
+                        <li class="menu-item"><a href="#groomsmen">Kontakt</a></li>
+                        <!--li class="menu-item"><a href="#bridesmaid">Trautzeugin</a></li-->
+                    </ul>
                 </div>
-            </nav>
-            <!-- ======================= main-menu-container Ends ======================= -->
-		</header>
-        <!-- ======================= header Ends ======================= -->
-        <!-- ======================= home content Starts ======================= -->
-        <section id="home" class="content">
-            <!--div class="container">        	
+    </div>
+    </nav>
+    <!-- ======================= main-menu-container Ends ======================= -->
+    </header>
+    <!-- ======================= header Ends ======================= -->
+    <!-- ======================= home content Starts ======================= -->
+    <section id="home" class="content">
+        <!--div class="container">        	
                 <div id="wedding">
                     <hgroup>
                         <h2>Hochzeit von</h2>
@@ -104,401 +139,458 @@
                     <div class="hr-grey"></div>
                 </div> 
             </div-->
-            <div class="invite-container">  
-                <span class="invite"><h3>Wir möchten Euch herzlich zu unserer Hochzeitsfeier am
-                    Samstag, den 14. Oktober 2023, im alten Obstkeller in Mönchberg einladen! Wir freuen uns
-                    sehr auf Euer Kommen! Christina &amp; Patrick</h3></span> 
-            </div>  
-            <!--div class="container"-->       
-                <div class="portfolio">
-                    <!--div class="one-half column"-->
-                        <figure class="theme-border-big border"><a href="#"><img src="images/christina.png" alt="" title="" class="border"></a></figure>
-                        
-                    <!--/div-->
-                    <!--div class="one-half column last">
+        <div class="countdown-container">
+
+            <div class="countdown" id="countdown"></div>
+
+        </div>
+        <div class="invite-container">
+            <span class="invite">
+                <h3>Wir sagen ja!</h3>
+                <div class="invite-text">Über zehn Jahre ist es her, dass wir uns das erste Mal gesehen haben. In all
+                    diesen Jahren haben wir viele wunderschöne Momente und Abenteuer miteinander erleben dürfen. Nun
+                    möchten wir unsere Liebe mit einem wundervollen Fest im Beisein unserer liebsten Menschen krönen.
+                    Hierzu möchten wir Euch gerne einladen.
+                </div>
+                <span class="invite-subtitle">
+                    <h3> Wir heiraten am 14. Oktober im Alten Obstkeller in Mönchberg.</h3>
+                </span>
+        </div>
+        <!--div class="container"-->
+        <div class="portfolio">
+            <!--div class="one-half column"-->
+            <figure class="theme-border-big border"><a href="#"><img src="images/christina.png" alt="" title=""
+                        class="border"></a></figure>
+
+            <!--/div-->
+            <!--div class="one-half column last">
                         <figure class="border theme-border-big"><a href="#"><img src="images/patrick.jpg" alt="" title="" class="border"></a></figure>
                         <h3 class="title-bg">Patrick</h3>
                         <p><span class="dropcap-default">Q</span>uis quam quam, quis fringilla lectus. Integer dapibus nunc sit amet quam sollicitudin a viverra sem iaculis. Donec suscipit sapien eget mauris ultrices quis dapibus sapien luctus. Nullam facilisis elit nulla. Proin pharetra fringilla mattis. Duis posuere sagittis dignissim. Nam malesuada dignissim massa quis egestas. Nullam ornare facilisis vulputate. Vivamus eu posuere urna. Pellentesque condimentum magna nec neque malesuada commodo. Nunc congue ultricies sem a interdum. Duis posuere sagittis dignissim. Nam malesuada dignissim massa quis egestas. Nullam ornare facilisis vulputate.</p>
                     </div-->
-                    <div class="container">
-                        <h3 class="title-bg">Christina & Patrick</h3>
-                            <p><span class="dropcap-default">S</span>ed quis quam quam, quis fringilla lectus. Integer dapibus nunc sit amet quam sollicitudin a viverra sem iaculis. Donec suscipit sapien eget mauris ultrices quis dapibus sapien luctus. Nullam facilisis elit nulla. Proin pharetra fringilla mattis. Duis posuere sagittis dignissim. Nam malesuada dignissim massa quis egestas. Nullam ornare facilisis vulputate. Vivamus eu posuere urna. Pellentesque condimentum magna nec neque malesuada commodo. Nunc congue ultricies sem a interdum. Duis posuere sagittis dignissim. Nam malesuada dignissim massa quis egestas. Nullam ornare facilisis vulputate.</p>
-                    </div>
-                </div>
+            <div class="container">
+                <h3 class="title-bg">Christina & Patrick</h3>
+                <!-- <p><span class="dropcap-default">S</span>ed quis quam quam, quis fringilla lectus. Integer dapibus nunc sit amet quam sollicitudin a viverra sem iaculis. Donec suscipit sapien eget mauris ultrices quis dapibus sapien luctus. Nullam facilisis elit nulla. Proin pharetra fringilla mattis. Duis posuere sagittis dignissim. Nam malesuada dignissim massa quis egestas. Nullam ornare facilisis vulputate. Vivamus eu posuere urna. Pellentesque condimentum magna nec neque malesuada commodo. Nunc congue ultricies sem a interdum. Duis posuere sagittis dignissim. Nam malesuada dignissim massa quis egestas. Nullam ornare facilisis vulputate.</p>-->
+            </div>
+        </div>
 
-            <!--/div-->
-            <!--div class="hr_invisible medium"></div-->
-			<!--div class="page-bottom-bg"></div-->
-        </section> 
-        <!-- ======================= home content Ends ======================= -->
-        <!-- ======================= ourstory content Starts ======================= -->
-		<section id="ourstory" class="content">
-            <div class="page-title">
-            	 <div class="parallax-cntr">
-					<div class="parallax">
-						<h2 class="hr-white">Hochzeitsfeier</h2>
-                    </div>
-				</div>
-            </div>             
-            <div class="site-content">
-                <div class="container">        	
-                    <div id="wedding">
-                        <hgroup>
-                            <h1>Obstkeller in Mönchberg</h1>
-                        </hgroup>
-                        <div class="hr-grey"></div>
-                    </div>  
-                </div>
-                <!-- ======================= banner Div Starts ======================= -->
-				<div class="banner">
-                    <!--div class="container"-->
-                        <div id="layerslider" style="width:930px; height: 460px; margin: 0px auto;">
-                            <div class="ls-layer" style="slidedirection: bottom; slidedelay: 7000; durationin: 1500; durationout: 1500; delayout: 500;">
-                                <img src="images/1.jpg" class="ls-bg" height="460" width="930" alt="layerbg1" />
-                            </div>
-                            <div class="ls-layer" style="slidedirection: right; slidedelay: 7000; durationin: 1500; durationout: 1500;">
-                                <img src="images/2.jpg" class="ls-bg" height="460" width="930" alt="layerbg2" />
-                            </div>        
-                            <div class="ls-layer" style="slidedirection: top; slidedelay: 7000; durationin: 1500; durationout: 1500; delayout: 500;">
-                                <img src="images/3.jpg" class="ls-bg" height="460" width="930" alt="layerbg3" />
-                            </div>
-                        </div>
-                    <!--/div-->
-                </div>
-                <div class="container">
-                        <div id="wedding">Wir heiraten im Alten Obstkeller in Mönchberg.</div>
-                        <!--h3 ></h3-->
-                </div>
-                <!-- ======================= banner Div Ends ======================= -->
-                <div class="container">        	
-                    <div id="wedding">
-                        <hgroup>
-                            <h1>Programm</h1>
-                        </hgroup>
-                        <div class="hr-grey"></div>
-                    </div>  
-                </div>
-                <section class="timeline">
-                    <article class="right event dt-sc-full-width">
-                    	<div class="dt-sc-one-half column first">
-                            <div class="post-detail">
-                                <h2>13:30 Uhr</h2>
-                                <h2>Ankunft der Gäste</h2>
-                            </div>
-						</div>
-                        <div class="dt-sc-one-half column">    
-                            <div class="post-thumb">
-                                <figure class="theme-border-big">
-                                    <a href="#"><img src="images/ankunft.png" alt="" title="" width="196" height="196"></a>
-                                    
-                                </figure>
-                                <!--span><h3>Ankunft der Gäste</h3></span-->
-                            </div>
-						</div>
-                    </article>
-                    <article class="left event dt-sc-full-width">
-                    	<div class="dt-sc-one-half column first">
-                            <div class="post-thumb">
-                                <figure class="theme-border-big">
-                                    <a href="#"><img src="images/trauung.png" alt="" title="" width="196" height="196"></a>
-                                </figure>
-                                <!--span><h3>Freie Trauung</h3></span-->
-                            </div>
-                        </div>
-                        <div class="dt-sc-one-half column">
-                            <div class="post-detail">
-                                <h2>14:00 Uhr</h2>
-                                <h2>Freie Trauung</h2>
-                            </div>
-						</div>
-                    </article>
-                    <article class="right event dt-sc-full-width">
-                    	<div class="dt-sc-one-half column first">
-                            <div class="post-detail">
-                                <h2>14:45</h2>
-                                <h2>Sektempfang</h2>
-                            </div>
-                        </div>
-                       <div class="dt-sc-one-half column"> 
-                            <div class="post-thumb">
-                                <figure class="theme-border-big">
-                                    <a href="#"><img src="images/sektempfang.png" alt="" title="" width="196" height="196"></a>
-                                </figure>
-                                <!--span><h3>Sektempfang</h3></span-->
-                            </div>
-						</div>
-                    </article>
-                    <article class="left event dt-sc-full-width">
-                    	<div class="dt-sc-one-half column first">
-                            <div class="post-thumb">
-                                <figure class="theme-border-big">
-                                    <a href="#"><img src="images/gruppenfoto.png" alt="" title="" width="196" height="196"></a>
-                                </figure>
-                                <!--span><h3>Gruppenfotos</h3></span-->
-                            </div>
-						</div>
-                        <div class="dt-sc-one-half column">
-                            <div class="post-detail">
-                                <h2>15:45 Uhr</h2>
-                                <h2>Gruppenfotos</h2>
-                            </div>
-						</div>
-                    </article>
-                    <article class="right event dt-sc-full-width">
-                    	<div class="dt-sc-one-half column first">
-                            <div class="post-detail">
-                                <h2>16:00 Uhr</h2>
-                                <h2>Kaffee & Kuchen</h2>
-                            </div>
-                        </div>
-                       <div class="dt-sc-one-half column"> 
-                            <div class="post-thumb">
-                                <figure class="theme-border-big">
-                                    <a href="#"><img src="images/kaffekuchen.png" alt="" title="" width="196" height="196"></a>
-                                </figure>
-                                <!--span><h3>Kaffee & Kuchen</h3></span-->
-                            </div>
-						</div>
-                    </article>
-                    <article class="left event dt-sc-full-width">
-                    	<div class="dt-sc-one-half column first">
-                            <div class="post-thumb">
-                                <figure class="theme-border-big">
-                                    <a href="#"><img src="images/buffet.png" alt="" title="" width="196" height="196"></a>
-                                </figure>
-                                <!--span><h3>Dinner Buffet</h3></span-->
-                            </div>
-						</div>
-                        <div class="dt-sc-one-half column">
-                            <div class="post-detail">
-                                <h2>18:30 Uhr</h2>
-                                <h2>Dinner Buffet</h2>
-                            </div>
-						</div>
-                    </article>
-                    <article class="right event dt-sc-full-width">
-                    	<div class="dt-sc-one-half column first">
-                            <div class="post-detail">
-                                <h2>21:00 Uhr</h2>
-                                <h2>Start der Party</h2>
-                            </div>
-                        </div>
-                       <div class="dt-sc-one-half column"> 
-                            <div class="post-thumb">
-                                <figure class="theme-border-big">
-                                    <a href="#"><img src="images/party.png" alt="" title="" width="196" height="196"></a>
-                                </figure>
-                                <!--span><h3>Start der Party</h3></span-->
-                            </div>
-						</div>
-                    </article>
-                    <article class="left event dt-sc-full-width">
-                    	<div class="dt-sc-one-half column first">
-                            <div class="post-thumb">
-                                <figure class="theme-border-big">
-                                    <a href="#"><img src="images/rakete.png" alt="" title="" width="196" height="196"></a>
-                                </figure>
-                                <!--span><h3>Dinner Buffet</h3></span-->
-                            </div>
-						</div>
-                        <div class="dt-sc-one-half column">
-                            <div class="post-detail">
-                                <h2>00:00 Uhr</h2>
-                                <h2>Go hard or go home</h2>
-                            </div>
-						</div>
-                    </article>
-				</section>
-                <div class="container">   
-                    <div class="container">        	
-                        <div id="wedding">
-                            <hgroup>
-                                <h1>Informationen</h1>
-                            </hgroup>
-                            <div class="hr-grey"></div>
-                        </div>  
-                    </div>
-                    <div class="container">
-                        <div id="wedding"> 
-                            <div>Sofern das Wetter mitspielt, haben wir angedacht die Trauung im Freien stattfinden zu lassen. Bitte beachtet dies bei der Wahl Eurer Kleidung.</div>
-                            <br>
-                            <div>Wir werden spätestens einen Monat vor unserer Trauung die Angaben in diesem Abschnitt noch einmal final aktualisieren.</div>
-                        </div>
-                    </div> 
-                </div>
-			</div>
-		</section>
-        <!-- ======================= ourstory content Ends ======================= -->
-        <!-- ======================= rsvp content Starts ======================= -->
-		<section id="rsvp" class="content">
-            <div class="page-title">
-            	<div class="parallax-cntr">
-                    <div class="parallax">
-                        <h2 class="hr-white">Rückmeldung</h2>
-                    </div>
+        <!--/div-->
+        <!--div class="hr_invisible medium"></div-->
+        <!--div class="page-bottom-bg"></div-->
+    </section>
+    <!-- ======================= home content Ends ======================= -->
+    <!-- ======================= ourstory content Starts ======================= -->
+    <section id="ourstory" class="content">
+        <div class="page-title">
+            <div class="parallax-cntr">
+                <div class="parallax">
+                    <h2 class="hr-white">Hochzeitsfeier</h2>
                 </div>
             </div>
-
-            <div class="site-content">
-                <div class="container">
-                    <div class="container">        	
-                        <div id="wedding">
-                            <hgroup>
-                                <h1>Seid Ihr dabei?</h1>
-                            </hgroup>
-                            <div class="hr-grey"></div>
-                        </div>  
+        </div>
+        <div class="site-content">
+            <div class="container">
+                <div id="wedding">
+                    <hgroup>
+                        <h1>Obstkeller in Mönchberg</h1>
+                    </hgroup>
+                    <div class="hr-grey"></div>
+                </div>
+            </div>
+            <!-- ======================= banner Div Starts ======================= -->
+            <div class="banner">
+                <!--div class="container"-->
+                <div id="layerslider" style="width:930px; height: 460px; margin: 0px auto;">
+                    <div class="ls-layer"
+                        style="slidedirection: bottom; slidedelay: 7000; durationin: 1500; durationout: 1500; delayout: 500;">
+                        <img src="images/1.jpg" class="ls-bg" height="460" width="930" alt="layerbg1" />
                     </div>
-                    <header>
-                        <span class="SectionHead aligncenter-text">Bitte meldet euch bis zum 1. August 2023 zurück.</span>
-                        <div id="ajax_message"></div>
-                    </header>
-                    <form id="frmrsvp" name="frmrsvp" action="js/send.php" class="rsvp" method="post">
-                        <div class="custom-radio-wrapper"><label class="oswald">Wirst du kommen?</label>
-                            <div class="custom-radio">
-                                <input type="radio" id="yes" name="rsvp" value="yes" > 
-                                <label class="oswald" for="yes">Ja</label>
-                                <input type="radio" id="no" name="rsvp" value="no">
-                                <label class="oswald" for="no">Nein</label>
-                            </div>
+                    <div class="ls-layer"
+                        style="slidedirection: right; slidedelay: 7000; durationin: 1500; durationout: 1500;">
+                        <img src="images/2.jpg" class="ls-bg" height="460" width="930" alt="layerbg2" />
+                    </div>
+                    <div class="ls-layer"
+                        style="slidedirection: top; slidedelay: 7000; durationin: 1500; durationout: 1500; delayout: 500;">
+                        <img src="images/3.jpg" class="ls-bg" height="460" width="930" alt="layerbg3" />
+                    </div>
+                </div>
+                <!--/div-->
+            </div>
+            <div class="container">
+                <!--div id="wedding">Wir heiraten im Alten Obstkeller in Mönchberg.</div-->
+                <!--h3 ></h3-->
+            </div>
+            <!-- ======================= banner Div Ends ======================= -->
+            <div class="container">
+                <div id="wedding">
+                    <hgroup>
+                        <h1>Programm</h1>
+                    </hgroup>
+                    <div class="hr-grey"></div>
+                </div>
+            </div>
+            <section class="timeline">
+                <article class="right event dt-sc-full-width">
+                    <div class="dt-sc-one-half column first">
+                        <div class="post-detail">
+                            <h2>13:30 Uhr</h2>
+                            <h2>Ankunft der Gäste</h2>
                         </div>
-                        <p class="twocolumn">
-                            <label class="oswald" for="fname">Name</label><br>
-                            <span><input  type="text" value="Vorname" onFocus="if (this.value == 'Vorname') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Vorname';}" id="fname" name="fname"  pattern="[a-zA-Z0-9_-]{6,12}" required=""></span>
-                            <span class="last"><input type="text" value="Nachname" onFocus="if (this.value == 'Nachname') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Nachname';}" id="lname" name="lname"></span>
-                        </p>
+                    </div>
+                    <div class="dt-sc-one-half column">
+                        <div class="post-thumb">
+                            <figure class="theme-border-big">
+                                <a href="#"><img src="images/ankunft.png" alt="" title="" width="196" height="196"></a>
+
+                            </figure>
+                            <!--span><h3>Ankunft der Gäste</h3></span-->
+                        </div>
+                    </div>
+                </article>
+                <article class="left event dt-sc-full-width">
+                    <div class="dt-sc-one-half column first">
+                        <div class="post-thumb">
+                            <figure class="theme-border-big">
+                                <a href="#"><img src="images/trauung.png" alt="" title="" width="196" height="196"></a>
+                            </figure>
+                            <!--span><h3>Freie Trauung</h3></span-->
+                        </div>
+                    </div>
+                    <div class="dt-sc-one-half column">
+                        <div class="post-detail">
+                            <h2>14:00 Uhr</h2>
+                            <h2>Freie Trauung</h2>
+                        </div>
+                    </div>
+                </article>
+                <article class="right event dt-sc-full-width">
+                    <div class="dt-sc-one-half column first">
+                        <div class="post-detail">
+                            <h2>14:45</h2>
+                            <h2>Sektempfang</h2>
+                        </div>
+                    </div>
+                    <div class="dt-sc-one-half column">
+                        <div class="post-thumb">
+                            <figure class="theme-border-big">
+                                <a href="#"><img src="images/sektempfang.png" alt="" title="" width="196"
+                                        height="196"></a>
+                            </figure>
+                            <!--span><h3>Sektempfang</h3></span-->
+                        </div>
+                    </div>
+                </article>
+                <article class="left event dt-sc-full-width">
+                    <div class="dt-sc-one-half column first">
+                        <div class="post-thumb">
+                            <figure class="theme-border-big">
+                                <a href="#"><img src="images/gruppenfoto.png" alt="" title="" width="196"
+                                        height="196"></a>
+                            </figure>
+                            <!--span><h3>Gruppenfotos</h3></span-->
+                        </div>
+                    </div>
+                    <div class="dt-sc-one-half column">
+                        <div class="post-detail">
+                            <h2>15:45 Uhr</h2>
+                            <h2>Gruppenfotos</h2>
+                        </div>
+                    </div>
+                </article>
+                <article class="right event dt-sc-full-width">
+                    <div class="dt-sc-one-half column first">
+                        <div class="post-detail">
+                            <h2>16:00 Uhr</h2>
+                            <h2>Kaffee & Kuchen</h2>
+                        </div>
+                    </div>
+                    <div class="dt-sc-one-half column">
+                        <div class="post-thumb">
+                            <figure class="theme-border-big">
+                                <a href="#"><img src="images/kaffekuchen.png" alt="" title="" width="196"
+                                        height="196"></a>
+                            </figure>
+                            <!--span><h3>Kaffee & Kuchen</h3></span-->
+                        </div>
+                    </div>
+                </article>
+                <article class="left event dt-sc-full-width">
+                    <div class="dt-sc-one-half column first">
+                        <div class="post-thumb">
+                            <figure class="theme-border-big">
+                                <a href="#"><img src="images/buffet.png" alt="" title="" width="196" height="196"></a>
+                            </figure>
+                            <!--span><h3>Dinner Buffet</h3></span-->
+                        </div>
+                    </div>
+                    <div class="dt-sc-one-half column">
+                        <div class="post-detail">
+                            <h2>18:30 Uhr</h2>
+                            <h2>Abendessen</h2>
+                        </div>
+                    </div>
+                </article>
+                <article class="right event dt-sc-full-width">
+                    <div class="dt-sc-one-half column first">
+                        <div class="post-detail">
+                            <h2>21:00 Uhr</h2>
+                            <h2>Start der Party</h2>
+                        </div>
+                    </div>
+                    <div class="dt-sc-one-half column">
+                        <div class="post-thumb">
+                            <figure class="theme-border-big">
+                                <a href="#"><img src="images/party.png" alt="" title="" width="196" height="196"></a>
+                            </figure>
+                            <!--span><h3>Start der Party</h3></span-->
+                        </div>
+                    </div>
+                </article>
+                <article class="left event dt-sc-full-width">
+                    <div class="dt-sc-one-half column first">
+                        <div class="post-thumb">
+                            <figure class="theme-border-big">
+                                <a href="#"><img src="images/rakete.png" alt="" title="" width="196" height="196"></a>
+                            </figure>
+                            <!--span><h3>Dinner Buffet</h3></span-->
+                        </div>
+                    </div>
+                    <div class="dt-sc-one-half column">
+                        <div class="post-detail">
+                            <h2>00:00 Uhr</h2>
+                            <h2>Go hard or go home</h2>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <div class="container">
+                <div class="container">
+                    <div id="wedding">
+                        <!--hgroup-->
+                        <h1>Informationen</h1>
+                        <!--/hgroup-->
+                        <!--div class="hr-grey"></div-->
+
+                        <!--div class="container"-->
+
+                        <div>Sofern das Wetter mitspielt, haben wir angedacht die Trauung im Freien stattfinden zu
+                            lassen. Bitte beachtet dies bei der Wahl Eurer Kleidung.</div>
+                        <br>
+                        <div>Wir werden spätestens einen Monat vor unserer Trauung die Angaben in diesem Abschnitt noch
+                            einmal final aktualisieren.</div>
+
+                        <!--/div-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ======================= ourstory content Ends ======================= -->
+    <!-- ======================= rsvp content Starts ======================= -->
+    <section id="rsvp" class="content">
+        <div class="page-title">
+            <div class="parallax-cntr">
+                <div class="parallax">
+                    <h2 class="hr-white">Rückmeldung</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-content">
+            <div class="container">
+                <div class="container">
+                    <div id="wedding">
+                        <hgroup>
+                            <h1>Seid Ihr dabei?</h1>
+                        </hgroup>
+                        <!--div class="hr-grey"></div-->
+                    </div>
+                </div>
+                <header>
+                    <span class="SectionHead aligncenter-text">Bitte meldet euch bis zum 31. Juli 2023 zurück.</span>
+                    <div id="ajax_message"></div>
+                </header>
+                <form id="frmrsvp" name="frmrsvp" action="js/send.php" class="rsvp" method="post">
+                    <div class="custom-radio-wrapper"><label class="oswald">Wirst du kommen?</label>
+                        <div class="custom-radio">
+                            <input type="radio" id="yes" name="rsvp" value="yes">
+                            <label class="oswald" for="yes">Ja</label>
+                            <input type="radio" id="no" name="rsvp" value="no">
+                            <label class="oswald" for="no">Nein</label>
+                        </div>
+                    </div>
+                    <p class="twocolumn">
+                        <label class="oswald" for="fname">Name</label><br>
+                        <span><input type="text" value="Vorname"
+                                onFocus="if (this.value == 'Vorname') {this.value = '';}"
+                                onBlur="if (this.value == '') {this.value = 'Vorname';}" id="fname" name="fname"
+                                pattern="[a-zA-Z0-9_-]{6,12}" required="false"></span>
+                        <span class="last"><input type="text" value="Nachname"
+                                onFocus="if (this.value == 'Nachname') {this.value = '';}"
+                                onBlur="if (this.value == '') {this.value = 'Nachname';}" id="lname"
+                                name="lname"></span>
+                    </p>
+                    <p>
+                        <label class="oswald" for="email">E-Mail</label><br>
+                        <span><input class="email-input-font" type="email" value="E-Mail"
+                                onFocus="if (this.value == 'E-Mail') {this.value = '';}"
+                                onBlur="if (this.value == '') {this.value = 'E-Mail';}" id="email" name="email"
+                                required></span>
+                    </p>
+                    <div class="custom-select">
                         <p>
-                            <label class="oswald" for="email">E-Mail</label><br>
-                            <span><input type="email" value="E-Mail" onFocus="if (this.value == 'E-Mail') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'E-Mail';}" id="email" name="email" required></span>
+                            <label class="oswald">Wie viele Begleitpersonen?</label>
+                            <span>
+                                <select name="cmbguests">
+                                    <option value="">Wähle</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </span>
                         </p>
-                        <!--div class="custom-select">
-                            <p>
-                                <label>Wieviele Gäste?</label>
-                                <span>
-                                    <select name="cmbguests">
-                                        <option value="">Wähle</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>                                                                                
-                                    </select>
-                                </span>
-                            </p>
-                            <p class="float-right last">                    
-                                <span><textarea cols="20" rows="1" onFocus="if (this.value == 'Namen der Gäste') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Namen der Gäste';}" id="txtguestnames" name="txtguestnames" required>Namen der Gäste</textarea></span>
-                            </p>
-                        </div-->
-                        <p>
-                            <label class="oswald" for="song">Euer Partysong?</label><br>
-                            <span><input type="text" value="Songname" onFocus="if (this.value == 'Songname') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Songname';}" id="song" name="song"  pattern="[a-zA-Z0-9_-]{6,12}"></span>
+                        <p class="float-right last">
+                            <span><textarea cols="20" rows="1"
+                                    onFocus="if (this.value == 'Namen der Begleitpersonen') {this.value = '';}"
+                                    onBlur="if (this.value == '') {this.value = 'Namen der Begleitpersonen';}"
+                                    id="txtguestnames" name="txtguestnames"
+                                    required>Namen der Begleitpersonen</textarea></span>
                         </p>
-                        <p>
-                            <label class="oswald" for="allergy">Unverträglichkeiten, Allergien oder Vorlieben?</label><br>
-                            <span><input type="text" value="Allergie" onFocus="if (this.value == 'Allergie') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Allergie';}" id="allergy" name="allergy"  pattern="[a-zA-Z0-9_-]{6,12}"></span>
-                        </p>
-                        <p class="float-right last">                    
-                            <span><textarea cols="20" rows="1" onFocus="if (this.value == 'Sonstiges') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Sonstiges';}" id="txtguestnames" name="txtguestnames">Sonstiges</textarea></span>
-                        </p>
-                        <!--p>
+                    </div>
+                    <p>
+                        <label class="oswald" for="song">Euer Partysong?</label><br>
+                        <span><input type="text" value="Songname"
+                                onFocus="if (this.value == 'Songname') {this.value = '';}"
+                                onBlur="if (this.value == '') {this.value = 'Songname';}" id="song" name="song"
+                                pattern="[a-zA-Z0-9_-]{6,12}"></span>
+                    </p>
+                    <p>
+                        <label class="oswald" for="allergy">Unverträglichkeiten, Allergien oder Vorlieben?</label><br>
+                        <span><input type="text" value="Allergie"
+                                onFocus="if (this.value == 'Allergie') {this.value = '';}"
+                                onBlur="if (this.value == '') {this.value = 'Allergie';}" id="allergy" name="allergy"
+                                pattern="[a-zA-Z0-9_-]{6,12}"></span>
+                    </p>
+                    <p class="float-right last">
+                        <span><textarea cols="20" rows="1" onFocus="if (this.value == 'Sonstiges') {this.value = '';}"
+                                onBlur="if (this.value == '') {this.value = 'Sonstiges';}" id="txtguestnames"
+                                name="txtguestnames">Sonstiges</textarea></span>
+                    </p>
+                    <!--p>
                             <header>
                                 <div><span class="SectionHead aligncenter-text">Wir freuen uns, wenn Ihr unser Get-together, unseren Nachtisch oder den geplanten Mitternachtssnack mit Euren Köstlichkeiten versüßt.</span></div>
                             </header>  
                         </p-->
 
-                        <div><br></div><br>
-                        <p class="float-right last">
-                            <span><textarea cols="20" rows="1" onFocus="if (this.value == 'Möchtest Du etwas mitbringen (Dessert, Kuchen oder Fingerfood)?') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Möchtest Du etwas mitbringen (Dessert, Kuchen oder Fingerfood)?';}" id="txtmessage" name="txtmessage" required="">Möchtest Du etwas mitbringen (Dessert, Kuchen oder Fingerfood)?</textarea></span>
-                        </p>
+                    <div><br></div><br>
+                    <p class="float-right last">
+                        <span><textarea cols="20" rows="1"
+                                onFocus="if (this.value == 'Möchtest Du etwas mitbringen (Dessert, Kuchen oder Fingerfood)?') {this.value = '';}"
+                                onBlur="if (this.value == '') {this.value = 'Möchtest Du etwas mitbringen (Dessert, Kuchen oder Fingerfood)?';}"
+                                id="txtmessage" name="txtmessage"
+                                required="">Möchtest Du etwas mitbringen (Dessert, Kuchen oder Fingerfood)?</textarea></span>
+                    </p>
 
-                        <p class="submit-bg last">
-                            <span><input type="submit" name="submit" value="Einreichen"></span>
-                        </p>
-                    </form>
+                    <p class="submit-bg last">
+                        <span><input type="submit" name="submit" value="Einreichen"></span>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ======================= rsvp content Ends ======================= -->
+    <!-- ======================= registry content Starts ======================= -->
+    <section id="registry" class="content">
+        <div class="page-title">
+            <div class="parallax-cntr">
+                <div class="parallax">
+                    <h2 class="hr-white">FAQ</h2>
                 </div>
             </div>
-        </section>
-        <!-- ======================= rsvp content Ends ======================= -->
-        <!-- ======================= registry content Starts ======================= -->
-		<section id="registry" class="content">
-            <div class="page-title">
-	            <div class="parallax-cntr">
-                    <div class="parallax">
-                        <h2 class="hr-white">FAQ</h2>
-                    </div>
-                </div>
-            </div>
-             <div class="site-content">
+        </div>
+        <div class="site-content">
+            <div class="container">
+
                 <div class="container">
-                    <div class="container">        	
-                        <div id="wedding">
-                            <hgroup>
-                                <h1>Gibt es einen Dresscode?</h1>
-                            </hgroup>
-                            <div class="hr-grey"></div>
-                        </div>  
-                    </div>
-                    <div class="container"> 
-                        <header>
-                        <div><span id="wedding">Zieht an, womit Ihr Euch wohlfühlt. Gern gesehen ist festliche Kleidung. </span></div>
-                        </header>  
-                    </div>
-                    <div class="container">        	
-                        <div id="wedding">
-                            <hgroup>
-                                <h1>Wünscht Ihr Euch etwas?</h1>
-                            </hgroup>
-                            <div class="hr-grey"></div>
-                        </div>  
-                    </div>
-                    <div class="container"> 
-                        <header>
-                        <div><span id="wedding">Wir freuen uns, wenn Ihr uns etwas schenken möchtet, insbesondere wenn Ihr kreativ werdet. Am meisten freuen wir uns über Geldgeschenke. </span></div>
-                        </header>  
+                    <div id="wedding">
+                        <!--hgroup-->
+                        <h1>Gibt es einen Dresscode?</h1>
+                        <!--/hgroup-->
+                        <!--div class="hr-grey"></div-->
+
+                        <!--div class="container"-->
+
+                        <div>Zieht an, womit Ihr Euch wohlfühlt. Gern gesehen ist festliche Kleidung.</div>
+
+                        <!--/div-->
                     </div>
                 </div>
-            </div> 
-        </section> 
-        <!-- ======================= registry content Ends ======================= -->
-        <!-- ======================= direction content Starts ======================= -->
-		<section id="direction" class="content">
-            <div class="page-title">
-            	<div class="parallax-cntr">
-                    <div class="parallax">
-                        <h2 class="hr-white">Anfahrt</h2>
+
+                <div class="container">
+                    <div id="wedding">
+                        <!--hgroup-->
+                        <h1>Wünscht Ihr Euch etwas?</h1>
+                        <!--/hgroup-->
+                        <!--div class="hr-grey"></div-->
+
+                        <!--div class="container"-->
+
+                        <div>Wir freuen uns, wenn Ihr uns etwas schenken möchtet, insbesondere wenn Ihr kreativ werdet.
+                            Am meisten freuen wir uns über Geldgeschenke.</div>
+
+                        <!--/div-->
                     </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ======================= registry content Ends ======================= -->
+    <!-- ======================= direction content Starts ======================= -->
+    <section id="direction" class="content">
+        <div class="page-title">
+            <div class="parallax-cntr">
+                <div class="parallax">
+                    <h2 class="hr-white">Anfahrt</h2>
                 </div>
             </div>
-            <div class="site-content">
-                <div class="container aligncenter-text">        	
-                    <div>
-                        <!--hgroup>
-                            <h1>Location</h1>
-                        </hgroup-->
-                        <h3>Location</h3>
-                        <div class="hr-grey"></div>
-                    </div>  
+        </div>
+        <div class="site-content">
+            <div class="container">
+                <div id="wedding">
+                    <!--hgroup-->
+                    <h1>Location</h1>
+                    <!--/hgroup-->
+                    <!--div class="hr-grey"></div-->
                 </div>
-                <div class="container">
-                    <div class="one-half column">
-                        <iframe width="445" height="370" src="https://maps.google.com/maps?q=obstkeller%20m%C3%B6nchberg&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-                    </div>
-                    <div class="one-half column last">
-                        <div class="SectionHead aligncenter-text">
-                               
-                            <aside id="address">
-                                <!--h3>Adresse</h3-->
-                                <h3>Adresse</h3>
-                                <div id="wedding"><b>Alter Obstkeller</b> <br> Am Hohen Bild 23, <br> 63933 Mönchberg <br><a href="www.obstkeller.com" class="website">www.obstkeller.com</a></div>
-                            </aside>
-                            <!--aside>
+            </div>
+            <div class="container">
+                <div class="one-half column">
+                    <iframe width="445" height="370"
+                        src="https://maps.google.com/maps?q=obstkeller%20m%C3%B6nchberg&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                </div>
+                <div class="one-half column last">
+                    <div class="SectionHead aligncenter-text">
+
+                        <aside id="address">
+                            <!--h3>Adresse</h3-->
+                            <div id="wedding">
+                                <h1>Adresse</h1>
+                                <b>Alter Obstkeller</b> <br> Am Hohen Bild 23, <br> 63933 Mönchberg <br><a
+                                    href="www.obstkeller.com" class="website">www.obstkeller.com</a>
+                            </div>
+                        </aside>
+                        <!--aside>
                                 <h3>Parken</h3>
                                 <p>Parkplätze für PKWs sind direkt am Obstkeller vorhanden (40 Plätze). Bitte parkt nicht entlang der Straße oder auf dem Rasen. Eine Parkskizze für weitere Stellflächen findet Ihr hier:</p>
                                 
                             </aside-->
-                        </div>
                     </div>
                 </div>
-                <!--div class="container">        	
+            </div>
+            <!--div class="container">        	
                     <div id="wedding">
                         <hgroup>
                             <h1>Parkplätze</h1>
@@ -506,20 +598,25 @@
                         <div class="hr-grey"></div>
                     </div>  
                 </div-->
-                <div class="container">
-                    <div class="one-half column ">
-                        <div class="SectionHead aligncenter-text">
-                            <aside>
-                                <h3>Parken</h3>
-                                <div id="wedding">Direkt am Obstkeller (magenta Fläche) befinden sich 40 KFZ-Stellplätze rund ums Haus (Süd-, West- und Nordseite (grüne Flächen). Bitte parkt nicht entlang der Straße oder auf dem Rasen. Eine Parkskizze für weitere Stellflächen findet Ihr hier.</div>
-                            </aside>
-                        </div>
-                    </div>
-                    <div class="one-half column last">
-                        <img src="images/4.jpg" class="theme-border-big" width="445" height="370" alt="layerbg3" />
+            <div class="container">
+                <div class="one-half column ">
+                    <div class="SectionHead aligncenter-text">
+                        <aside>
+                            <div id="wedding">
+                                <h1>Parken</h1>
+                                Direkt am Obstkeller (magenta Fläche) befinden sich 40 KFZ-Stellplätze rund ums Haus
+                                (Süd-, West- und Nordseite (grüne Flächen). Bitte parkt nicht entlang der Straße oder
+                                auf dem Rasen. Eine Parkskizze für weitere Stellflächen findet Ihr hier.
+                            </div>
+                            <div id="wedding"></div>
+                        </aside>
                     </div>
                 </div>
-                <!--div class="container">        	
+                <div class="one-half column last">
+                    <img src="images/4.jpg" class="theme-border-big" width="445" height="370" alt="layerbg3" />
+                </div>
+            </div>
+            <!--div class="container">        	
                     <div id="wedding">
                         <hgroup>
                             <h1>Hotels in der Nähe</h1>
@@ -527,130 +624,144 @@
                         <div class="hr-grey"></div>
                     </div>  
                 </div-->
-                <div class="site-content">
-                    <div class="container">
-                        <div class="container aligncenter-text">        	
-                            <div>
-                                <h3>Hotels in der Nähe</h3>
-                                <div class="hr-grey"></div>
-                            </div>  
-                        </div>
-                    </div>
-                <div id="wedding" class="container">
+            <!--div class="site-content"-->
+            <div class="container">
+                <div id="wedding">
+                    <!--hgroup-->
+                    <h1>Hotels in der Nähe</h1>
+                    <!--/hgroup-->
+                    <!--div class="hr-grey"></div-->
                     <div class="one-half column ">
                         <div class="SectionHead aligncenter-text">
-                            <p><div><b>Gasthaus zum Ochsen </b></div>
-                                <div>Hauptstraße 35 </div>
-                                <div>63933 Mönchberg </div>
-                                <div>T: 0 93 74 - 97 09 668 </div>
-                                <a href="www.gasthaus-zum-ochsen.com">www.gasthaus-zum-ochsen.com</a> 
-                                </p>
+                            <p>
+                            <div><b>Gasthaus zum Ochsen </b></div>
+                            <div>Hauptstraße 35 </div>
+                            <div>63933 Mönchberg </div>
+                            <div>T: 0 93 74 - 97 09 668 </div>
+                            <a href="www.gasthaus-zum-ochsen.com">www.gasthaus-zum-ochsen.com</a>
+                            </p>
                         </div>
                     </div>
                     <div class="one-half column last">
                         <div class="SectionHead aligncenter-text">
-                            <p><div><b>Hotel Schmitt </b></div>
-                                <div>Fam. Schmitt </div>
-                                <div>Urbanusstraße 12  </div>
-                                <div>63933 Mönchberg </div>
-                                <div>T: 0 93 74 - 20 90 </div>
-                                <a href="www.hotel-schmitt.de">www.hotel-schmitt.de</a> 
-                                </p>
+                            <p>
+                            <div><b>Hotel Schmitt </b></div>
+                            <div>Fam. Schmitt </div>
+                            <div>Urbanusstraße 12 </div>
+                            <div>63933 Mönchberg </div>
+                            <div>T: 0 93 74 - 20 90 </div>
+                            <a href="www.hotel-schmitt.de">www.hotel-schmitt.de</a>
+                            </p>
                         </div>
                     </div>
                     <div class="one-half column ">
                         <div class="SectionHead aligncenter-text">
-                            <p><div><b>Gasthof "Zur Krone"</b></div>
-                                <div>Fam. Wirth und Weis </div>
-                                <div>Mühlweg 7 </div>
-                                <div>63933 Mönchberg </div>
-                                <div>T: 0 93 74 - 5 39  </div>
-                                <a href="www.krone-moenchberg.de">www.krone-moenchberg.de </a> 
-                                </p>
+                            <p>
+                            <div><b>Gasthof "Zur Krone"</b></div>
+                            <div>Fam. Wirth und Weis </div>
+                            <div>Mühlweg 7 </div>
+                            <div>63933 Mönchberg </div>
+                            <div>T: 0 93 74 - 5 39 </div>
+                            <a href="www.krone-moenchberg.de">www.krone-moenchberg.de </a>
+                            </p>
                         </div>
                     </div>
                     <div class="one-half column last">
                         <div class="SectionHead aligncenter-text">
-                            <p><div><b>Baumhaushotel Wipfelglück</b></div>
-                                <div>GPS: Nord 49° 47´ 29" Ost 9° 16´ 44" </div>
-                                <div>Spitzensteinweg</div>
-                                <div>63933 Mönchberg </div>
-                                <div>T: 0 93 74 - 319</div>
-                                <a href="www.wipfelglueck.de">www.wipfelglueck.de</a> 
-                                </p>
+                            <p>
+                            <div><b>Baumhaushotel Wipfelglück</b></div>
+                            <div>GPS: Nord 49° 47´ 29" Ost 9° 16´ 44" </div>
+                            <div>Spitzensteinweg</div>
+                            <div>63933 Mönchberg </div>
+                            <div>T: 0 93 74 - 319</div>
+                            <a href="www.wipfelglueck.de">www.wipfelglueck.de</a>
+                            </p>
                         </div>
                     </div>
-                    <div class="one-half column ">
-                        <div class="SectionHead aligncenter-text">
-                            <p><div><b>Pension & Pizzeria „Zur Brauerei“ </b></div>
+                    <!--div class="one-half column ">
+                            <div class="SectionHead aligncenter-text">
+                                <p>
+                                <div><b>Pension & Pizzeria „Zur Brauerei“ </b></div>
                                 <div>Fam. Wirth und Weis </div>
                                 <div>Hauptstraße 11 </div>
                                 <div>63933 Mönchberg </div>
                                 <div>T: 093 74 - 97 999 21</div>
-                                <a href="www.zur-brauerei.de">www.zur-brauerei.de</a> 
+                                <a href="www.zur-brauerei.de">www.zur-brauerei.de</a>
                                 </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="one-half column last">
-                        <div class="SectionHead aligncenter-text">
-                            <p><div><b>FeWo Haus "Inselfrei" </b></div>
+                        <div class="one-half column last">
+                            <div class="SectionHead aligncenter-text">
+                                <p>
+                                <div><b>FeWo Haus "Inselfrei" </b></div>
                                 <div>Birgitta Leimeister </div>
                                 <div>Schwimmbadstrasse 3 </div>
                                 <div>63933 Mönchberg </div>
                                 <div>T: 0 93 74 - 71 80</div>
                                 <div>M: 0175 - 6 78 88 87 </div>
-                                <a href="ferienwohnungen.de/ferienwohnung/27176">ferienwohnungen.de/27176</a> 
+                                <a href="ferienwohnungen.de/ferienwohnung/27176">ferienwohnungen.de/27176</a>
                                 </p>
+                            </div>
                         </div>
-                    </div>
-
-
-                    <div class="one-half column ">
-                        <div class="SectionHead aligncenter-text">
-                            <p><div><b>FeWo Haus "Köhlers Spessartblick" </b></div>
+    
+    
+                        <div class="one-half column ">
+                            <div class="SectionHead aligncenter-text">
+                                <p>
+                                <div><b>FeWo Haus "Köhlers Spessartblick" </b></div>
                                 <div>Prozeltener Weg 5 </div>
                                 <div>63933 Mönchberg - OT Schmachtenberg </div>
                                 <div>T: 0 93 72 - 1 24 79</div>
-                                <a href="ferienwohnungen.de/ferienwohnung/27564">ferienwohnungen.de/27564 </a> 
+                                <a href="ferienwohnungen.de/ferienwohnung/27564">ferienwohnungen.de/27564 </a>
                                 </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="one-half column last">
-                        <div class="SectionHead aligncenter-text">
-                            <p><div><b>Camping Familie Heiter Mönchberg </b></div>
+                        <div class="one-half column last">
+                            <div class="SectionHead aligncenter-text">
+                                <p>
+                                <div><b>Camping Familie Heiter Mönchberg </b></div>
                                 <div>Campingstraße 2 </div>
                                 <div>63933 Mönchberg </div>
                                 <div>T: 0 93 74 - 13 30 </div>
-                                <a href="campingplatz-moenchberg.jimdo.com">campingplatz-moenchberg.jimdo.com</a> 
+                                <a href="campingplatz-moenchberg.jimdo.com">campingplatz-moenchberg.jimdo.com</a>
                                 </p>
-                        </div>
-                    </div>
+                            </div>
+                        </div-->
                 </div>
             </div>
+            <div id="wedding" class="container">
+
             </div>
-        </section>
-        <!-- ======================= direction content Ends ======================= -->
-        <!-- ======================= photo content Starts ======================= -->
-		<section id="photo" class="content">
-            <div class="page-title">
-            	<div class="parallax-cntr">
-                    <div class="parallax">
-                        <h2 class="hr-white">Hochzeitsbilder</h2>
-                    </div>
+            <!--/div-->
+        </div>
+    </section>
+    <!-- ======================= direction content Ends ======================= -->
+    <!-- ======================= photo content Starts ======================= -->
+    <section id="photo" class="content">
+        <div class="page-title">
+            <div class="parallax-cntr">
+                <div class="parallax">
+                    <h2 class="hr-white">Hochzeitsbilder</h2>
                 </div>
             </div>
-            <div class="site-content">
-                
+        </div>
+        <div class="site-content">
+
+            <div class="container">
                 <div class="container">
-                    <div class="container"> 
-                        <!--header-->
-                        <div><div id="wedding">Hier könnt Ihr im Nachgang der Hochzeit Eure geschossenen Bilder von unserem Lieblingstag mit uns teilen. Auch wir werden die Bilder des Fotografen hochladen.</div></div>
-                        <!--/header-->  
+                    <!--header-->
+                    <div>
+                        <div id="wedding">In diesem Abschnitt könnt Ihr im Nachgang der Hochzeit Eure geschossenen
+                            Bilder von unserem
+                            Lieblingstag mit uns teilen. Auch wir werden die Bilder des Fotografen hochladen.</div>
                     </div>
-                    <div class="container"> 
-                        <div>  </div> 
-                    </div>
-                    <!--nav>
+
+                    <!--/header-->
+                </div>
+                <div class="container">
+                    <div> </div>
+                </div>
+                <!--nav>
                         <ul class="category-filter">
                             <li><a href="#" class="active"  data-filter="*"> All (58) </a></li>
                             <li><a href="#" data-filter=".pre-marriage">Pre-marriage (32)</a></li>
@@ -716,88 +827,113 @@
                             <p>Amet, consectetur adipiscing elit</p>
                         </article>
                     </div-->
+            </div>
+        </div>
+    </section>
+    <!-- ======================= photo content Ends ======================= -->
+    <!-- ======================= groomsmen content Starts ======================= -->
+    <section id="groomsmen" class="content">
+        <div class="page-title">
+            <div class="parallax-cntr">
+                <div class="parallax">
+                    <h2 class="hr-white">Kontakt</h2>
                 </div>
             </div>
-        </section> 
-        <!-- ======================= photo content Ends ======================= -->
-        <!-- ======================= groomsmen content Starts ======================= -->
-        <section id="groomsmen" class="content">
-            <div class="page-title">
-            	<div class="parallax-cntr">
-                    <div class="parallax">
-                        <h2 class="hr-white">Kontakt</h2>
+        </div>
+        <div class="site-content">
+            <div class="container">
+                <!--article>
+                    <figure class="entry-thumb float-left">
+                        <div class="theme-border-big border">
+                            <a href="#"><img src="images/christina.jpg" alt="" title=""></a>
+                        </div>
+                    </figure>
+                    <div class="entry-detail">
+                        <h4>Christina <span>Braut</span> </h4>
+                        <p> 0176 50222856</p>
+                        <p>christina_brand@outlook.de</p>
+                
+                    </div>
+                </article-->
+                <div class="portfolio">
+                    <div>
+                        <!--div class="one-half column"-->
+                        <figure class="border-contact"><a href="#">
+                                <img src="images/christina.png" alt="" title="" class=""></a></figure>
+                        <div class="SectionHead aligncenter-text">
+                            <p>
+                            <div><b><span style="font-size:24px;">Christina</span> <span
+                                        style="color:#f4aa78">(Braut)</span></b></div>
+                            <div>0176 50222856 </div>
+                            <div>christina_brand@outlook.de</div>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="site-content">
-                <div class="container">
-                    <article>
-                        <figure class="entry-thumb float-left">
-                        	<div class="thumb">
-                                <a href="#"><img src="images/christina.jpg" alt="" title=""></a>
-                                <!--div class="social">
+                <article>
+
+                    <figure class="float-left entry-thumb">
+                        <div class="thumb">
+                            <a href="#"><img src="images/patrick.jpg" width="190" height="240" alt="" title=""></a>
+                            <!--div class="social">
                                     <a href="#" class="icon-facebook"></a>
                                     <a href="#" class="icon-twitter"></a>
                                 </div-->
-                            </div>
-</figure>
-                        <div class="entry-detail">
-                            <h4>Christina <span>Braut</span> </h4> 
-                            <p> 0176 50222856</p>
-                            <p>christina_brand@outlook.de</p>
-                            <!--p> To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? </p-->
                         </div>
-                    </article>
-                    <article>
-   
-                        <figure class="float-left entry-thumb">
-                        	<div class="thumb">
-                                <a href="#"><img src="images/patrick.jpg" width="190" height="240" alt="" title=""></a>
-                                <!--div class="social">
+                    </figure>
+                    <div class="SectionHead aligncenter-text">
+                        <p>
+                        <div><b><span style="font-size:24px;">Patrick</span> <span
+                                    style="color:#f4aa78">(Bräutigam)</span></b></div>
+                        <div>01511 2522295 </div>
+                        <div>pfeiffer.patrick@outlook.de</div>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <figure class="float-left entry-thumb">
+                        <div class="thumb">
+                            <a href="#"><img src="images/josh.jpg" alt="" title=""></a>
+                            <!--div class="social">
                                     <a href="#" class="icon-facebook"></a>
                                     <a href="#" class="icon-twitter"></a>
                                 </div-->
-                            </div>
-                        </figure>
-                        <div class="entry-detail">
-                            <h4>Patrick<span>Bräutigam</span> </h4> 
-                            <p>0176 50222856 </p>
-                            <p>pfeiffer.patrick@outlook.de</p>
                         </div>
-                    </article>
-                    <article>
-                        <figure class="float-left entry-thumb">
-                        	<div class="thumb">
-                                <a href="#"><img src="http://placehold.it/180x235" alt="" title=""></a>
-                                <!--div class="social">
+                    </figure>
+                    <!--div class="entry-detail">
+                        <h4>Joshua Dahm <span>Best Man</span> </h4>
+                        <p> 01512 3562699</p>
+                      
+                    </div-->
+                    <div class="SectionHead aligncenter-text">
+                        <p>
+                        <div><b><span style="font-size:24px;">Joshua</span><span style="color:#f4aa78">
+                                    (Trauzeuge)</span></b></div>
+                        <div>01512 3562699 </div>
+                        <!--div>pfeiffer.patrick@outlook.de</div-->
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <figure class="float-left entry-thumb">
+                        <div class="thumb">
+                            <a href="#"><img src="images/jannika.jpg" width="190" height="240" alt="" title=""></a>
+                            <!--div class="social">
                                     <a href="#" class="icon-facebook"></a>
                                     <a href="#" class="icon-twitter"></a>
                                 </div-->
-                            </div>
-                        </figure>
-                        <div class="entry-detail">
-                            <h4>Joshua Dahm <span>Best Man</span> </h4> 
-                            <p> 01512 3562699</p>
-                            <!--p> To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? </p-->
                         </div>
-                    </article>
-                    <article>
-                        <figure class="float-left entry-thumb">
-                        	<div class="thumb">
-                                <a href="#"><img src="images/jannika.jpg" width="190" height="240" alt="" title=""></a>
-                                <!--div class="social">
-                                    <a href="#" class="icon-facebook"></a>
-                                    <a href="#" class="icon-twitter"></a>
-                                </div-->
-                            </div>
-                        </figure>
-                        <div class="entry-detail">
-                            <h4>Jannika Brand<span>Trautzeugin</span> </h4> 
-                            <p>0175 7203258 </p>
-                            <p>brandjannika@web.de</p>
-                        </div>
-                    </article>
-                    <!--article>
+                    </figure>
+                    <div class="SectionHead aligncenter-text">
+                        <p>
+                        <div><b><span style="font-size:24px;">Jannika</span><span style="color:#f4aa78">
+                                    (Trauzeugin)</span></b></div>
+                        <div>0175 7203258 </div>
+                        <div>brandjannika@web.de</div>
+                        </p>
+                    </div>
+                </article>
+                <!--article>
                         <figure class="float-left entry-thumb">
                         	<div class="thumb">
                                 <a href="#"><img src="http://placehold.it/180x235" alt="" title=""></a>
@@ -828,13 +964,13 @@
                             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                             <p> To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? </p>
                         </div>
-                    </article-->  
-                </div>
+                    </article-->
             </div>
-        </section>
-        <!-- ======================= Groomsmen Ends ======================= -->
-        <!-- ======================= Bridesmaid Starts ======================= -->
-        <!--section id="bridesmaid" class="content">
+        </div>
+    </section>
+    <!-- ======================= Groomsmen Ends ======================= -->
+    <!-- ======================= Bridesmaid Starts ======================= -->
+    <!--section id="bridesmaid" class="content">
             <div class="page-title">
             	<div class="parallax-cntr">
                     <div class="parallax">
@@ -896,50 +1032,51 @@
                 <div class="hr_invisible large"></div>
             </div>
         </section-->
-        <!-- ======================= Bridesmaid Ends ======================= -->
-        <!-- ======================= footer Starts ======================= -->
-        <footer>
-            <div class="container">
-                <div class="aligncenter-text copyright">
-                    <!--div class="page-bottom-bg"></div-->
-                    <ul class="social-media">
-                        <li><a href="mailto:Christina_brand@outlook.de">Christina_brand@outlook.de</a></li>
-                        <li>0176 50222856</li>
-                        <!--li><a href="#" class="fb"></a></li>
+    <!-- ======================= Bridesmaid Ends ======================= -->
+    <!-- ======================= footer Starts ======================= -->
+    <footer>
+        <div class="container">
+            <div class="aligncenter-text copyright">
+                <!--div class="page-bottom-bg"></div-->
+                <ul class="social-media">
+                    <li><a href="mailto:Christina_brand@outlook.de">Christina_brand@outlook.de</a></li>
+                    <li>0176 50222856</li>
+                    <!--li><a href="#" class="fb"></a></li>
                         <li><a href="#" class="twit"></a></li>
                         <li><a href="#" class="you-tube"></a></li-->
-                    </ul>
-                    <p>Christina &amp; Patrick 14 Oktober 2023</p>
-                </div>
+                </ul>
+                <p>Christina &amp; Patrick 14 Oktober 2023</p>
             </div>
-        </footer>
-        <!-- footer div Ends here -->
+        </div>
+    </footer>
+    <!-- footer div Ends here -->
     </div>
     <!-- wrapper Div Ends here -->
-    
+
     <!-- ======================= jQuery ======================= -->
-    <script type="text/javascript" src="js/jquery.js"></script>    
-    
+    <script type="text/javascript" src="js/jquery.js"></script>
+
     <script src="js/jquery.visualNav.js"></script>
     <script src="js/jquery.mobilemenu.js"></script>
-    
-	<script src="js/jquery-easing-1.3.js" type="text/javascript"></script>
-	<script src="js/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
-      
-	<script type="text/javascript" src="js/customInput.jquery.js"></script>
-    
-	<script type="text/javascript" src="js/isotope/jquery.isotope.min.js"></script>
-    
-	<script type="text/javascript" src="js/prettyphoto/jquery.prettyPhoto.js"></script>
-    
-	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
-    
-	<script type="text/javascript" src="js/greyScale.min.js"></script>
-    
-	<script type="text/javascript" src="js/custom.js"></script>
-    
-	<!-- <script type="text/javascript" src="js/controlpanel/jquery.cookie.js"></script>
+
+    <script src="js/jquery-easing-1.3.js" type="text/javascript"></script>
+    <script src="js/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="js/customInput.jquery.js"></script>
+
+    <script type="text/javascript" src="js/isotope/jquery.isotope.min.js"></script>
+
+    <script type="text/javascript" src="js/prettyphoto/jquery.prettyPhoto.js"></script>
+
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+
+    <script type="text/javascript" src="js/greyScale.min.js"></script>
+
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <!-- <script type="text/javascript" src="js/controlpanel/jquery.cookie.js"></script>
 	<script type="text/javascript" src="js/controlpanel/control-panel.js"></script> -->
-    
+
 </body>
+
 </html>
