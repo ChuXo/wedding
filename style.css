@@ -511,6 +511,11 @@ blockquote {
 	width: 100%;
 }
 
+.custom-select {
+	color: black;
+	-webkit-appearance: none;
+}
+
 .container {
 	margin: 0 auto;
 	width: 940px;
@@ -824,7 +829,7 @@ nav.main-menu-container {
 	font-weight: normal;
 	line-height: 40px;
 	height: 40px;
-	margin-bottom: 23px;
+	margin-bottom: 83px;
 	text-align: center;
 	padding-bottom: 27px;
 	text-transform: uppercase;
@@ -1326,7 +1331,7 @@ ul.category-filter li a.active {
 #bridesmaid figure .thumb img,
 #groomsmen figure .thumb,
 #groomsmen figure .thumb img {
-	border-radius: 139px 139px 139px 139px / 167px 167px 167px 167px;
+	border-radius: 50%; /*139px 139px 139px 139px / 167px 167px 167px 167px;*/
 	behavior: url(PIE.htc);
 	position: relative;
 }
@@ -1335,13 +1340,13 @@ ul.category-filter li a.active {
 #groomsmen figure .thumb {
 	background-repeat: repeat;
 	display: block;
-	height: 235px;
+	height: 335px;
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
 	padding: 5px;
 	position: relative;
-	width: 180px;
+	width: 335px;
 	-webkit-transition: all 300ms linear;
 	-moz-transition: all 300ms linear;
 	-o-transition: all 300ms linear;
