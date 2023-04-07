@@ -421,7 +421,7 @@
                 <form id="frmrsvp" name="frmrsvp" action="js/send.php" class="rsvp" method="post">
                     <div class="custom-radio-wrapper"><label class="oswald">Wirst du kommen?</label>
                         <div class="custom-radio">
-                            <input type="radio" id="yes" name="rsvp" value="yes">
+                            <input type="radio" id="yes" name="rsvp" value="yes" checked="checked">
                             <label class="oswald" for="yes">Ja</label>
                             <input type="radio" id="no" name="rsvp" value="no">
                             <label class="oswald" for="no">Nein</label>
@@ -432,7 +432,7 @@
                         <span><input type="text" value="Vorname"
                                 onFocus="if (this.value == 'Vorname') {this.value = '';}"
                                 onBlur="if (this.value == '') {this.value = 'Vorname';}" id="fname" name="fname"
-                                pattern="[a-zA-Z0-9_-]{6,12}" required="false"></span>
+                                required></span>
                         <span class="last"><input type="text" value="Nachname"
                                 onFocus="if (this.value == 'Nachname') {this.value = '';}"
                                 onBlur="if (this.value == '') {this.value = 'Nachname';}" id="lname"
@@ -470,20 +470,19 @@
                         <label class="oswald" for="song">Euer Partysong?</label><br>
                         <span><input type="text" value="Songname"
                                 onFocus="if (this.value == 'Songname') {this.value = '';}"
-                                onBlur="if (this.value == '') {this.value = 'Songname';}" id="song" name="song"
-                                pattern="[a-zA-Z0-9_-]{6,12}"></span>
+                                onBlur="if (this.value == '') {this.value = 'Songname';}" id="song" name="song"></span>
                     </p>
                     <p>
                         <label class="oswald" for="allergy">Unverträglichkeiten, Allergien oder Vorlieben?</label><br>
                         <span><input type="text" value="Allergie"
                                 onFocus="if (this.value == 'Allergie') {this.value = '';}"
-                                onBlur="if (this.value == '') {this.value = 'Allergie';}" id="allergy" name="allergy"
-                                pattern="[a-zA-Z0-9_-]{6,12}"></span>
+                                onBlur="if (this.value == '') {this.value = 'Allergie';}" id="allergy"
+                                name="allergy"></span>
                     </p>
                     <p class="float-right last">
                         <span><textarea cols="20" rows="1" onFocus="if (this.value == 'Sonstiges') {this.value = '';}"
                                 onBlur="if (this.value == '') {this.value = 'Sonstiges';}" id="txtguestnames"
-                                name="txtguestnames">Sonstiges</textarea></span>
+                                name="other">Sonstiges</textarea></span>
                     </p>
                     <!--p>
                             <header>
@@ -496,7 +495,7 @@
                         <span><textarea cols="20" rows="1"
                                 onFocus="if (this.value == 'Möchtest Du etwas mitbringen (Dessert, Kuchen oder Fingerfood)?') {this.value = '';}"
                                 onBlur="if (this.value == '') {this.value = 'Möchtest Du etwas mitbringen (Dessert, Kuchen oder Fingerfood)?';}"
-                                id="txtmessage" name="txtmessage"
+                                id="bringfood" name="bringfood"
                                 required="">Möchtest Du etwas mitbringen (Dessert, Kuchen oder Fingerfood)?</textarea></span>
                     </p>
 
@@ -529,7 +528,8 @@
 
                         <!--div class="container"-->
 
-                        <div>Hauptsache für uns ist, dass ihr Euch wohlfühlt. Gern gesehen ist festliche Kleidung. Gern gesehen ist festliche Kleidung.</div>
+                        <div>Hauptsache für uns ist, dass ihr Euch wohlfühlt. Gern gesehen ist festliche Kleidung. Gern
+                            gesehen ist festliche Kleidung.</div>
 
                         <!--/div-->
                     </div>
@@ -544,7 +544,8 @@
 
                         <!--div class="container"-->
 
-                        <div>Das schönste Geschenk für uns ist, wenn Ihr diesen besonderen Tag mit uns gemeinsam feiert. Ansonsten freuen wir uns am meisten über Geldgeschenke.</div>
+                        <div>Das schönste Geschenk für uns ist, wenn Ihr diesen besonderen Tag mit uns gemeinsam feiert.
+                            Ansonsten freuen wir uns am meisten über Geldgeschenke.</div>
 
                         <!--/div-->
                     </div>
@@ -875,10 +876,10 @@
                     </figure>
                     <div class="SectionHead aligncenter-text">
                         <p>
-                            <div><b><span style="font-size:24px;">Christina</span> <span
-                                style="color:#f4aa78">(Braut)</span></b></div>
-                    <div>0176 50222856 </div>
-                    <div>christina_brand@outlook.de</div>
+                        <div><b><span style="font-size:24px;">Christina</span> <span
+                                    style="color:#f4aa78">(Braut)</span></b></div>
+                        <div>0176 50222856 </div>
+                        <div>christina_brand@outlook.de</div>
                         </p>
                     </div>
                 </article>
@@ -906,7 +907,7 @@
                 <article>
                     <figure class="float-left entry-thumb">
                         <div class="thumb">
-                            <a href="#"><img src="images/josh.jpg" alt="" title=""  width="335" height="335"></a>
+                            <a href="#"><img src="images/josh.jpg" alt="" title="" width="335" height="335"></a>
                             <!--div class="social">
                                     <a href="#" class="icon-facebook"></a>
                                     <a href="#" class="icon-twitter"></a>
