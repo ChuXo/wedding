@@ -1,7 +1,7 @@
 <?php
 if(!$_POST) exit;
 
-    $to 	  = 'schucktimo123@gmail.com';// 'christina_brand@outlook.de';
+    $to 	  = 'christina_brand@outlook.de';
 	$fname	  = $_POST['fname'];
 	$lname	  = $_POST['lname'];	
 	$email    = $_POST['email'];
@@ -33,7 +33,7 @@ if(!$_POST) exit;
 								
 	 if(@mail($to, $subject, $msg, "From: $email\r\nReturn-Path: $email\r\n"))
 	 {
-		 echo "<div class='success message'><span class='icon'></span>Thanks for Contacting Us, We will call back to you soon.</div>";
+		 echo "<div class='success message'><span class='icon'></span>Thanks for your Feedback.</div>";
 	 }
 	 else
 	 {

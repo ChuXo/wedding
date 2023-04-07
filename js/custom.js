@@ -70,7 +70,7 @@ jQuery(document).ready(function($){
 	$('.grayscale img').hide().fadeIn(1000);
 	
 	//AJAX SUBMIT...
-	$('form#frmrsvp').submit(function () {
+	/*$('form#frmrsvp').submit(function () {
 										   
 		var This = $(this);
 		
@@ -93,7 +93,7 @@ jQuery(document).ready(function($){
 			});
 		}
 		return false;
-    });
+    });*/
 });
 
 jQuery(window).load(function () {
