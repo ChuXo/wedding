@@ -578,13 +578,22 @@ ul.category-filter li a {
 	behavior: url(PIE.htc);
 }
 
+.countdown-container {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
 .countdown {
 	font-family: 'Oswald', sans-serif;
 	font-size: 22px;
-	background: #f4aa78;
-	padding: 16px;
+	/*background: #f4aa78;*/
+	padding: 46px;
 	text-align: center;
 	display:inline-block;
+	background-image: url("skins/pastell/images/grooms-bg.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
 }
 
 /* =Font styles
@@ -614,11 +623,6 @@ input[type="submit"],
 input[type="reset"] {
 	font-family: 'Domine', serif;
 	font-weight: normal;
-}
-
-.countdown-container {
-	margin-bottom: 50px;
-	text-align: center;
 }
 
 .invite {
